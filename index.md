@@ -20,6 +20,14 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 element ui有很多主题和组件，这让我想起了bootstrap。人生苦短，先学到这里吧。
 
+
+### 容器
+
+1、docker。 
+一句话总结：docker是一个容器干一件事，所以搭建环境，先要下载各种新镜像，通过手工配置或者写dockfile配置把镜像启动为容器，一切配好环境能用，就把这些镜像导出，再上传到私服仓库，然后本机下载dockcompose，写个dockercompose.yml，里面是环境需要启动的各种容器。
+要复制环境时，在新机器上安装docker，然后从私服拉取镜像，用复制来的dockercompose.yml直接用命令运行，就完成了。
+查了这么多，<a href="https://blog.csdn.net/londa/article/details/91815208" target="_blank">这篇文章</a>终于说到点子上了。
+
 ```markdown
 Syntax highlighted code block
 
