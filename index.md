@@ -24,23 +24,9 @@ element ui有很多主题和组件，这让我想起了bootstrap。人生苦短�
 要复制环境时，在新机器上安装docker，然后从私服拉取镜像，用复制来的dockercompose.yml直接用命令运行，就完成了。
 查了这么多，<a href="https://blog.csdn.net/londa/article/details/91815208" target="_blank">这篇文章</a>终于说到点子上了。
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+[Link](https://segmentfault.com/a/1190000021220727?utm_source=tag-newest) and ![Image](src)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
 ### 从零开始：搭建一个测试技术练习平台
 
