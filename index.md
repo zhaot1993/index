@@ -44,11 +44,13 @@ Syntax highlighted code block
 
 ### 从零开始：搭建一个测试技术练习平台
 
-#### 一、环境准备
+```
+一、环境准备
+
             <ul>
                 <li>一、环境准备</li>
                 <li>1、准备一台电脑</li>
-                <li>2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a></li>
+                2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a>
                 <li>3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同</li>
                 <li>4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，</li>
                 <li>5、官网下个xshell6，不用破解</li>
@@ -190,5 +192,5 @@ Syntax highlighted code block
                 </li>
                 <li>未完待续</li>
             </ul>
-
+```
 
