@@ -27,7 +27,7 @@ element ui有很多主题和组件，这让我想起了bootstrap。人生苦短�
 ### 从零开始：搭建一个测试技术练习平台
 
 一、环境准备
-1、准备一台电脑
+1、准备一台电脑<br>
 2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a>
 3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同
                 <li>4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，</li>
