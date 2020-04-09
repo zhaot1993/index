@@ -24,18 +24,12 @@ element ui有很多主题和组件，这让我想起了bootstrap。人生苦短�
 要复制环境时，在新机器上安装docker，然后从私服拉取镜像，用复制来的dockercompose.yml直接用命令运行，就完成了。
 查了这么多，<a href="https://blog.csdn.net/londa/article/details/91815208" target="_blank">这篇文章</a>终于说到点子上了。
 
-
-[Link] and ![Image](src)
-[点我传送](https://segmentfault.com/a/1190000021220727?utm_source=tag-newest)
-
 ### 从零开始：搭建一个测试技术练习平台
 
-```
 一、环境准备
 1、准备一台电脑
-2、官网下载最新版Intellij IDEA，破解步骤：[点我传送](https://segmentfault.com/a/1190000021220727?utm_source=tag-newest)
-                <ul>
-                <li>3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同</li>
+2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a>
+3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同
                 <li>4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，</li>
                 <li>5、官网下个xshell6，不用破解</li>
                 <li>6、下载JavaSE最新版本，目前是13，配环境变量</li>
@@ -176,5 +170,5 @@ element ui有很多主题和组件，这让我想起了bootstrap。人生苦短�
                 </li>
                 <li>未完待续</li>
             </ul>
-```
+
 
