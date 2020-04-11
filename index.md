@@ -6,15 +6,15 @@
 3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同<br>
 4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，<br>
 5、官网下个xshell6，不用破解<br>
-6、下载JavaSE最新版本，目前是13，配环境变量<br>
+6、下载JavaEE，版本8，配环境变量<br>
 7、下载python最新版，目前是3.8，不用配环境变量，安装时勾选，能自动配<br>
 ### 检验工具
 1、python：<br>
 1)优势库很多，windows系统在cmd中执行pip命令安装即可,数据分析类方便直观<br>
 2)用selenium时，要启动webdriver控制谷歌浏览器，需要下载插件chromedriver.exe，找自己浏览器对应版本，下载地址:<a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">点我传送</a>,把插件放python默认安装目录下<br>
 3)最近用财务知识挑股票很累。于是想用python做个程序，根据条件选股票。优矿依赖它平台，东方财富新浪百度等API陈旧不易用,无意中发现了一个库，叫证券宝 <a href="http://baostock.com/baostock/index.php/%E9%A6%96%E9%A1%B5" target="_blank">官方文档点我传送</a>，国内开源，能pip安装，用了用发现，目前的股票接口，都是用于趋势分析的。<br>
-6)python3.x版本连接mysql数据库要pip install mysqlclient，然后import MySQLdb使用，具体用法<a href="https://www.runoob.com/python/python-mysql.html" target="_blank">点我传送</a><br>
-7)安装python最新版后，cmd中运行pip没用，最后发现是本机安装了loadrunner，环境变量冲突了，where pip查环境变量，删除冲突项即可。<a href="https://blog.csdn.net/h18208975507/article/details/103049635" target="_blank">可参考</a><br>
+4)python3.x版本连接mysql数据库要pip install mysqlclient，然后import MySQLdb使用，具体用法<a href="https://www.runoob.com/python/python-mysql.html" target="_blank">点我传送</a><br>
+5)安装python最新版后，cmd中运行pip没用，最后发现是本机安装了loadrunner，环境变量冲突了，where pip查环境变量，删除冲突项即可。<a href="https://blog.csdn.net/h18208975507/article/details/103049635" target="_blank">可参考</a><br>
 2、java：
 <br>暂时搭建一个web网页，springboot + spring data jpa + mysql，打开Intellij IDEA，新建spring项目，选jdk13，.properties中开日志，设tomcat端口。建目录：web，dao，service。建页面：两种方式
 <br>&nbsp;有前端程序员的公司，框架写好页面，留ajax等后端程序员传数据即可。
@@ -70,10 +70,11 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 需安装，用于定位正在IO的进程。<a href="https://www.cnblogs.com/yinzhengjie/p/9934260.html" target="_blank">具体点我</a>
 ### 自动化测试
 1、TestNG<br>
-<a href="https://blog.csdn.net/qq_32821227/article/details/53816639" target="_blank">(点我传送)</a>跟junit差不多，看到junit更新到了5，就学习了一下，它内嵌在spring boot test包里，springboot项目默认有这个包。简单来说，右键要测的类生成测试类，在test目录下，给测试类加@SpringBootTest注解，给方法加@Test注解，直接@Autowired拿到要用的bean，在测试方法里写逻辑，加断言判断，最后用maven的test按钮运行一下，就能自动测完所有内容。可以看看这个junit4的简单上手 <a href="https://www.cnblogs.com/vipstone/p/9908545.html" target="_blank">点我传送</a>，结合junit5的文档看 <a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions" target="_blank">点我传送</a>。啰嗦一句，单元测试的方法，加@Transactional可以直接回滚数据，哪个包的@Transactional都行，但数据库的主键还是对自增，不想回滚数据就加@Rollback(false)。再啰嗦一句，用junit时尝试了一下java的lambda和双冒号::，没有get到双冒号的使用场景<a href="https://blog.csdn.net/weixin_34249678/article/details/92428476?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank"> 点我传送</a>
-2、jenkins+jmeter<br>
+<a href="https://blog.csdn.net/qq_32821227/article/details/53816639" target="_blank">(点我传送)</a>跟junit差不多。最近收藏的<a href="https://alanhou.org/java-automated-testing/" target="_blank">一份笔记</a>竟然是B站一个java接口自动化教学的笔记，用的是testNG+externReport+moco+jenkins+git+springboot。<br>
+2、看到junit更新到了5，就学习了一下，它内嵌在spring boot test包里，springboot项目默认有这个包。简单来说，右键要测的类生成测试类，在test目录下，给测试类加@SpringBootTest注解，给方法加@Test注解，直接@Autowired拿到要用的bean，在测试方法里写逻辑，加断言判断，最后用maven的test按钮运行一下，就能自动测完所有内容。可以看看这个junit4的简单上手 <a href="https://www.cnblogs.com/vipstone/p/9908545.html" target="_blank">点我传送</a>，结合junit5的文档看 <a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions" target="_blank">点我传送</a>。啰嗦一句，单元测试的方法，加@Transactional可以直接回滚数据，哪个包的@Transactional都行，但数据库的主键还是对自增，不想回滚数据就加@Rollback(false)。再啰嗦一句，用junit时尝试了一下java的lambda和双冒号::，没有get到双冒号的使用场景<a href="https://blog.csdn.net/weixin_34249678/article/details/92428476?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank"> 点我传送</a>
+3、jenkins+jmeter<br>
 接口自动化：简言之，就是用jmeter做好脚本，设置为运行一次，放服务器上，jenkins设置构建后触发jmeter命令行，测试报告发邮件。<a href="https://www.cnblogs.com/zishi/p/8448073.html" target="_blank">具体步骤</a>+<a href="https://www.cnblogs.com/wldan/p/10946919.html" target="_blank">发邮件</a>
-3、python自动化<br>
+4、python自动化<br>
 目前常见的是用法是 selenium+unittest+htmlreport,selenium支持多种语言，用于模拟人工操作浏览器，需pip安装。unittest是python自带的单元测试框架，跟junit、testng几乎一样，通过testsuite调run方法批量执行测试类，htmlreport用于生成测试报告，pip安装，testsuite用htmlreport调用run即可。一个python自动化框架用法：先封装函数：打开浏览器、进入页面、获取页面元素、操作、判断结果，共5步，这里注意获取元素要用显式等待，报错要截图，然后是测试数据（或者叫测试用例）与代码分离，测试结果可以写入表格，也可以生成html。一个页面对应一个class，class里多个函数对应多个要测的功能，testsuite写在入口方法，添加所有class，便可运行所有测试。
 ### 接口测试
 1、postman<br>
