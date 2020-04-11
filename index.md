@@ -26,33 +26,30 @@ element ui有很多主题和组件，这让我想起了bootstrap。人生苦短�
 
 ### 从零开始：搭建一个测试技术练习平台
 
-一、环境准备
+一、环境准备<br>
 1、准备一台电脑<br>
-2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a>
-3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同
-                <li>4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，</li>
-                <li>5、官网下个xshell6，不用破解</li>
-                <li>6、下载JavaSE最新版本，目前是13，配环境变量</li>
-                <li>7、下载python最新版，目前是3.8，不用配环境变量，安装时勾选，能自动配</li>
-            </ul>
-            <ul>
-                <li>二、检验工具</li>
-                <li>1、python：
-                    <br>1)基本语法不难，多用就熟了
-                    <br>2)库很多，windows系统在cmd中执行pip命令安装即可,数据分析类方便直观
-                    <br>3)自动化测试方面，根据需求，封装函数，数据分离，生成报告，没了。
-                    <br>4)用selenium时，要启动webdriver控制谷歌浏览器，需要下载插件chromedriver.exe，
-                    <br>&nbsp;找自己浏览器对应版本，下载地址:<a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">点我传送</a>
-                    <br>&nbsp;把插件放python默认安装目录下
-                    <br>5)2020，0318，最近很多股票打75折，我用以前学的财务知识挑股票，很累，票太多。
-                    <br>&nbsp;于是想用python做个程序，根据条件选股票。优矿依赖它平台，不顺眼，东方财富新浪百度等API陈旧不易用
-                    <br>&nbsp;无意中发现了一个库，叫证券宝 <a href="http://baostock.com/baostock/index.php/%E9%A6%96%E9%A1%B5" target="_blank">官方文档点我传送</a>，国内开源，能pip安装，用了用发现，目前的股票接口，都是用于趋势分析的，
-                    <br>&nbsp;我觉得一根线也能看出技术是扯淡，不过细想，A股十几年都是3000点，价值投资也是扯淡。遂作罢
-                    <br>5)python3.x版本连接mysql数据库要pip install mysqlclient，然后import MySQLdb使用，具体用法<a href="https://www.runoob.com/python/python-mysql.html" target="_blank">点我传送</a>
-                    <br>6)安装python最新版后，cmd中运行pip没用，最后发现是本机安装了loadrunner，环境变量冲突了，where pip查环境变量，删除冲突项即可。
-                    <br>&nbsp;<a href="https://blog.csdn.net/h18208975507/article/details/103049635" target="_blank">可参考</a>
-                    </li>
-                <li>2、java：
+2、官网下载最新版Intellij IDEA，破解步骤：<a href="https://segmentfault.com/a/1190000021220727?utm_source=tag-newest" target="_blank">点我传送</a><br>
+3、官网下载最新版PyCharm，破解步骤同上，区别是配置路径不同<br>
+4、风刑软件站，下载安装VMware虚拟机破解版，再找个CentOS7的镜像文件安装，<br>
+5、官网下个xshell6，不用破解
+6、下载JavaSE最新版本，目前是13，配环境变量
+7、下载python最新版，目前是3.8，不用配环境变量，安装时勾选，能自动配
+二、检验工具
+1、python：
+1)基本语法不难，多用就熟了
+2)库很多，windows系统在cmd中执行pip命令安装即可,数据分析类方便直观
+3)自动化测试方面，根据需求，封装函数，数据分离，生成报告，没了。
+4)用selenium时，要启动webdriver控制谷歌浏览器，需要下载插件chromedriver.exe，
+<br>&nbsp;找自己浏览器对应版本，下载地址:<a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">点我传送</a>
+<br>&nbsp;把插件放python默认安装目录下
+<br>5)2020，0318，最近很多股票打75折，我用以前学的财务知识挑股票，很累，票太多。
+<br>&nbsp;于是想用python做个程序，根据条件选股票。优矿依赖它平台，不顺眼，东方财富新浪百度等API陈旧不易用
+<br>&nbsp;无意中发现了一个库，叫证券宝 <a href="http://baostock.com/baostock/index.php/%E9%A6%96%E9%A1%B5" target="_blank">官方文档点我传送</a>，国内开源，能pip安装，用了用发现，目前的股票接口，都是用于趋势分析的，
+<br>&nbsp;我觉得一根线也能看出技术是扯淡，不过细想，A股十几年都是3000点，价值投资也是扯淡。遂作罢
+<br>5)python3.x版本连接mysql数据库要pip install mysqlclient，然后import MySQLdb使用，具体用法<a href="https://www.runoob.com/python/python-mysql.html" target="_blank">点我传送</a>
+<br>6)安装python最新版后，cmd中运行pip没用，最后发现是本机安装了loadrunner，环境变量冲突了，where pip查环境变量，删除冲突项即可。
+<br>&nbsp;<a href="https://blog.csdn.net/h18208975507/article/details/103049635" target="_blank">可参考</a>
+2、java：
                     <br>1)暂时搭建一个web网页，springboot + spring data jpa + mysql
                     <br>2)打开Intellij IDEA，新建spring项目，选jdk13，.properties中开日志，设tomcat端口
                     <br>3)建目录：web，dao，service，启动类加@ComponentScan(basePackages = {"com.*"})，不然扫不到其他类
