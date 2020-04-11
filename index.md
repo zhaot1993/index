@@ -70,7 +70,7 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 需安装，用于定位正在IO的进程。<a href="https://www.cnblogs.com/yinzhengjie/p/9934260.html" target="_blank">具体点我</a>
 ### 自动化测试
 1、TestNG<br>
-<a href="https://blog.csdn.net/qq_32821227/article/details/53816639" target="_blank">(点我传送)</a>跟junit差不多。最近收藏的<a href="https://alanhou.org/java-automated-testing/" target="_blank">一份笔记</a>竟然是B站一个java接口自动化教学的笔记，用的是testNG+externReport+moco+jenkins+git+springboot。<br>
+<a href="https://blog.csdn.net/qq_32821227/article/details/53816639" target="_blank">(点我传送)</a>跟junit差不多。最近收藏的<a href="https://www.jianshu.com/p/1f357b849c87" target="_blank">一份笔记</a>竟然是B站一个java接口自动化教学的笔记，用的是testNG+externReport+moco+jenkins+git+springboot。<br>
 2、看到junit更新到了5，就学习了一下，它内嵌在spring boot test包里，springboot项目默认有这个包。简单来说，右键要测的类生成测试类，在test目录下，给测试类加@SpringBootTest注解，给方法加@Test注解，直接@Autowired拿到要用的bean，在测试方法里写逻辑，加断言判断，最后用maven的test按钮运行一下，就能自动测完所有内容。可以看看这个junit4的简单上手 <a href="https://www.cnblogs.com/vipstone/p/9908545.html" target="_blank">点我传送</a>，结合junit5的文档看 <a href="https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions" target="_blank">点我传送</a>。啰嗦一句，单元测试的方法，加@Transactional可以直接回滚数据，哪个包的@Transactional都行，但数据库的主键还是对自增，不想回滚数据就加@Rollback(false)。再啰嗦一句，用junit时尝试了一下java的lambda和双冒号::，没有get到双冒号的使用场景<a href="https://blog.csdn.net/weixin_34249678/article/details/92428476?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank"> 点我传送</a>
 3、jenkins+jmeter<br>
 接口自动化：简言之，就是用jmeter做好脚本，设置为运行一次，放服务器上，jenkins设置构建后触发jmeter命令行，测试报告发邮件。<a href="https://www.cnblogs.com/zishi/p/8448073.html" target="_blank">具体步骤</a>+<a href="https://www.cnblogs.com/wldan/p/10946919.html" target="_blank">发邮件</a>
