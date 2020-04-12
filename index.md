@@ -20,7 +20,6 @@
 <br>&nbsp;有前端程序员的公司，框架写好页面，留ajax等后端程序员传数据即可。
 <br>&nbsp;没前端程序员的公司，后端程序员需要用引擎模板开发页面，java会自己渲染页面并传数据，前端引擎模板jsp，freemarker，thymeleaf都一样，前后端分离很灵活，但也要看项目用起来是否划算。
 <br>我选thymeleaf，要在html标签开头加一句咒语`xmlns:th="http://www.thymeleaf.org"，`就可以用th标签在页面里操作后端来的变量了。要在templates下建h5页面，去bootstrap官网，不用下载，引cdn方式的文件，js和css都是现成的，官网能看组件，还自适应<br>
-<br>
 <br>关于前端框架：最近面试项目要用vue.js，它基于nodejs，<a href="https://blog.csdn.net/woshinannan741/article/details/51337484" target="_blank">nodejs是什么</a>。npm是它自带的包管理工具，cnpm是淘宝做的国内版，安装之后，用法一样。<br>
 继续学vue，文档提示我参考webpack，Webpack是一个前端资源加载/打包工具，可以将多种静态资源 js、css、less 转换成一个静态文件，减少了页面的请求，用cnpm安装。我现在不需要。<br>
 接着看，文档说vue有两种安装方式，要么npm装，要么页面引个cdn链接，效果一样，毕竟nodejs和我的谷歌浏览器用的都是谷歌的V8引擎。<br>
@@ -76,7 +75,8 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 接口自动化：简言之，就是用jmeter做好脚本，设置为运行一次，放服务器上，jenkins设置构建后触发jmeter命令行，测试报告发邮件。<a href="https://www.cnblogs.com/zishi/p/8448073.html" target="_blank">具体步骤</a>+<a href="https://www.cnblogs.com/wldan/p/10946919.html" target="_blank">发邮件</a>
 4、python自动化<br>
 目前常见的是用法是 selenium+unittest+htmlreport,selenium支持多种语言，用于模拟人工操作浏览器，需pip安装。unittest是python自带的单元测试框架，跟junit、testng几乎一样，通过testsuite调run方法批量执行测试类，htmlreport用于生成测试报告，pip安装，testsuite用htmlreport调用run即可。一个python自动化框架用法：先封装函数：打开浏览器、进入页面、获取页面元素、操作、判断结果，共5步，这里注意获取元素要用显式等待，报错要截图，然后是测试数据（或者叫测试用例）与代码分离，测试结果可以写入表格，也可以生成html。一个页面对应一个class，class里多个函数对应多个要测的功能，testsuite写在入口方法，添加所有class，便可运行所有测试。参考如下：<br>
-<a href="https://www.cnblogs.com/yinjia/p/9503407.html" target="_blank">selenium自动化框架搭建</a><br>
+<a href="https://www.cnblogs.com/imyalost/p/9034194.html" target="_blank">自动化框架总览</a><br>
+<a href="https://www.cnblogs.com/yinjia/p/9503407.html" target="_blank">selenium自动化框架搭建</a>+<a href="https://blog.csdn.net/sinat_34817187/article/details/82018099?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank">另一种搭建方式</a><br>
 <a href="https://www.jianshu.com/p/5cff47ae3582" target="_blank">python本地测试报告无法生成（junit也有类似问题）</a><br>
 持续集成<a href="http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html" target="_blank">介绍</a>及<a href="https://blog.csdn.net/qq_36450484/article/details/100556861" target="_blank">方案</a><br>
 <a href="https://www.cnblogs.com/yimiaoyikan/p/10225849.html" target="_blank">linux无界面运行selenium设置headless</a>
