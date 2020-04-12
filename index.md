@@ -78,7 +78,8 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 目前常见的是用法是 selenium+unittest+htmlreport,selenium支持多种语言，用于模拟人工操作浏览器，需pip安装。unittest是python自带的单元测试框架，跟junit、testng几乎一样，通过testsuite调run方法批量执行测试类，htmlreport用于生成测试报告，pip安装，testsuite用htmlreport调用run即可。一个python自动化框架用法：先封装函数：打开浏览器、进入页面、获取页面元素、操作、判断结果，共5步，这里注意获取元素要用显式等待，报错要截图，然后是测试数据（或者叫测试用例）与代码分离，测试结果可以写入表格，也可以生成html。一个页面对应一个class，class里多个函数对应多个要测的功能，testsuite写在入口方法，添加所有class，便可运行所有测试。参考如下：<br>
 <a href="https://www.cnblogs.com/yinjia/p/9503407.html" target="_blank">selenium自动化框架搭建</a><br>
 <a href="https://www.jianshu.com/p/5cff47ae3582" target="_blank">python本地测试报告无法生成（junit也有类似问题）</a><br>
-持续集成<a href="http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html" target="_blank">介绍</a>及<a href="https://blog.csdn.net/qq_36450484/article/details/100556861" target="_blank">方案</a>
+持续集成<a href="http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html" target="_blank">介绍</a>及<a href="https://blog.csdn.net/qq_36450484/article/details/100556861" target="_blank">方案</a><br>
+<a href="https://www.cnblogs.com/yimiaoyikan/p/10225849.html" target="_blank">linux无界面运行selenium设置headless</a>
 ### 接口测试
 1、postman<br>
 现在主要推销自己的客户端，看来想做成一个大平台，在官网号称可以用于CI自动化。快速上手 <a href="https://blog.csdn.net/fxbin123/article/details/80428216" target="_blank">点我传送</a>，扩展：<a href="https://www.cnblogs.com/meibaorui/p/9182660.html" target="_blank">OAuth2</a>
