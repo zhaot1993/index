@@ -80,6 +80,8 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 <a href="https://www.jianshu.com/p/5cff47ae3582" target="_blank">python本地测试报告无法生成（junit也有类似问题）</a><br>
 持续集成<a href="http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html" target="_blank">介绍</a>及<a href="https://blog.csdn.net/qq_36450484/article/details/100556861" target="_blank">方案</a><br>
 <a href="https://www.cnblogs.com/yimiaoyikan/p/10225849.html" target="_blank">linux无界面运行selenium设置headless</a>
+<a href="https://zhuanlan.zhihu.com/p/76237595" target="_blank">无界面情景可搭配基于nodejs的框架puppeteer</a>
+
 ### 接口测试
 1、postman<br>
 现在主要推销自己的客户端，看来想做成一个大平台，在官网号称可以用于CI自动化。快速上手 <a href="https://blog.csdn.net/fxbin123/article/details/80428216" target="_blank">点我传送</a>，扩展：<a href="https://www.cnblogs.com/meibaorui/p/9182660.html" target="_blank">OAuth2</a>
