@@ -15,6 +15,7 @@
 3)最近用财务知识挑股票很累。于是想用python做个程序，根据条件选股票。优矿依赖它平台，东方财富新浪百度等API陈旧不易用,无意中发现了一个库，叫证券宝 <a href="http://baostock.com/baostock/index.php/%E9%A6%96%E9%A1%B5" target="_blank">官方文档点我传送</a>，国内开源，能pip安装，用了用发现，目前的股票接口，都是用于趋势分析的。<br>
 4)python3.x版本连接mysql数据库要pip install mysqlclient，然后import MySQLdb使用，具体用法<a href="https://www.runoob.com/python/python-mysql.html" target="_blank">点我传送</a><br>
 5)安装python最新版后，cmd中运行pip没用，最后发现是本机安装了loadrunner，环境变量冲突了，where pip查环境变量，删除冲突项即可。<a href="https://blog.csdn.net/h18208975507/article/details/103049635" target="_blank">可参考</a><br>
+
 2、java：
 <br>暂时搭建一个web网页，springboot + spring data jpa + mysql，打开Intellij IDEA，新建spring项目，选jdk13，.properties中开日志，设tomcat端口。建目录：web，dao，service。建页面：两种方式
 <br>&nbsp;有前端程序员的公司，框架写好页面，留ajax等后端程序员传数据即可。
@@ -79,15 +80,28 @@ Linux自带，看内存的，<a href="https://www.cnblogs.com/jiujuan/p/9034165.
 <a href="https://www.cnblogs.com/yinjia/p/9503407.html" target="_blank">selenium自动化框架搭建</a>+<a href="https://blog.csdn.net/sinat_34817187/article/details/82018099?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank">另一种搭建方式</a><br>
 <a href="https://www.jianshu.com/p/5cff47ae3582" target="_blank">python本地测试报告无法生成（junit也有类似问题）</a><br>
 持续集成<a href="http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html" target="_blank">介绍</a>及<a href="https://blog.csdn.net/qq_36450484/article/details/100556861" target="_blank">方案</a><br>
-<a href="https://www.cnblogs.com/yimiaoyikan/p/10225849.html" target="_blank">linux无界面运行selenium设置headless</a>
-<a href="https://zhuanlan.zhihu.com/p/76237595" target="_blank">无界面情景可搭配基于nodejs的框架puppeteer</a>
+<a href="https://www.cnblogs.com/yimiaoyikan/p/10225849.html" target="_blank">linux无界面运行selenium设置headless</a><br>
+<a href="https://zhuanlan.zhihu.com/p/76237595" target="_blank">无界面情景可搭配基于nodejs的框架puppeteer</a><br>
+<a href="https://pypi.org/project/HTMLReport/" target="_blank">python测试报告htmlReport</a><br>
+5、自动化工具——Macaca<br>
+集成了PC、移动端安卓、IOS的解决方案，<a href="https://www.jianshu.com/p/c09653b17dab" target="_blank">简介</a>,<a href="https://blog.csdn.net/duzilonglove/article/details/78850662" target="_blank">使用入门</a><br>
+6、自动化工具——Katalon Studio<br>
+也是集成各种端，但收费<a href="http://www.uml.org.cn/Test/201909282.asp" target="_blank">简介</a>，<a href="https://blog.csdn.net/qq_18659137/article/details/85249307" target="_blank">使用入门</a><br>
 
 ### 接口测试
 1、postman<br>
 现在主要推销自己的客户端，看来想做成一个大平台，在官网号称可以用于CI自动化。快速上手 <a href="https://blog.csdn.net/fxbin123/article/details/80428216" target="_blank">点我传送</a>，扩展：<a href="https://www.cnblogs.com/meibaorui/p/9182660.html" target="_blank">OAuth2</a>
+2、httpRunner<br>
+基于python的接口测试框架。<a href="https://testerhome.com/opensource_projects/httprunner" target="_blank">点我传送</a>
+3、REST assured<br>
+基于Java的接口测试框架。<a href="https://blog.csdn.net/hualusiyu/article/details/81910136" target="_blank">点我传送</a>
+
 ### 单元测试
 1、mock<br>
-mock的工具很多，spring boot test内置的是mockito，和junit配合用的。它就是用反射机制拿到类，然后让人手动设置方法返回值而已，之后再判断方法的调用顺序呀、次数呀等等细节，最后加个junit的断言判断，具体以后用到再复习吧 <a href="https://blog.csdn.net/cckevincyh/article/details/82228245" target="_blank">点我传送</a>，此外，mock还能测controller，如果哪天有针对单元测试的活儿，可以先看一眼这个 <a href="https://www.cnblogs.com/jpfss/p/11271015.html" target="_blank">点我传送</a>，python的unittest自带mock，<a href="http://blog.itpub.net/69908432/viewspace-2647614/" target="_blank">具体参考。</a>
+mock的工具很多，spring boot test内置的是mockito，和junit配合用的。它就是用反射机制拿到类，然后让人手动设置方法返回值而已，之后再判断方法的调用顺序呀、次数呀等等细节，最后加个junit的断言判断，具体以后用到再复习吧 <a href="https://blog.csdn.net/cckevincyh/article/details/82228245" target="_blank">点我传送</a>，此外，mock还能测controller，如果哪天有针对单元测试的活儿，可以先看一眼这个 <a href="https://www.cnblogs.com/jpfss/p/11271015.html" target="_blank">点我传送</a>，python的unittest自带mock，<a href="http://blog.itpub.net/69908432/viewspace-2647614/" target="_blank">具体参考。</a><br>
+2、Cucumber<br>
+基于Java，把代码定义为字符描述，让非开发人员组织测试用例。<a href="https://blog.csdn.net/Cupupup/article/details/80152297" target="_blank">具体参考。</a><br>
+
 ### 性能测试
 1、jmeter
 <br><a href="https://www.cnblogs.com/imyalost/p/7062784.html" target="_blank">这篇</a>作为入门看着笔记方便,但要是快速上手，还是徐景峰<a href="https://mp.weixin.qq.com/s?__biz=MzI0NzEyODIyOA==&mid=2247484493&idx=1&sn=1dc17d69d6b15a186b9ff6dfe555950e&chksm=e9b58d86dec204908863621b3213efdaab0a3bcbd2e7248f0ea50f2059b2938699fa025079ea&mpshare=1&scene=24&srcid=&sharer_sharetime=1567989008735&sharer_shareid=6acb53c777c0956c7b3b43c93583c9e7#rd" target="_blank">这篇</a>思路正确，其他很多上手文章，讲不到点上。入门之后，<a href="https://www.cnblogs.com/testwjr/p/9156705.html" target="_blank">这篇</a>可用作总结提升。
@@ -111,3 +125,11 @@ Vu增加，响应时间会变慢，tps变大，但到了一定值，tps反而减
 <br>2)关于场景：场景与计划共四种组合方式，<a href="https://www.cnblogs.com/snailvsstar/p/6845964.html" target="_blank">具体参考</a>
 <br>3)loadrunner打印日志时，若返回报文内容过多，会显示不全，但不影响web_reg_save_param抓数据。
 <br>4)用lr转码中文，数据提交后在页面发现中文最后有空格，<a href="https://my.oschina.net/erichd/blog/499680" target="_blank">解决方法</a>
+<br>5)LR发压报错Address already in use Try changing the registry value。<a href="https://blog.csdn.net/gzh0222/article/details/7732561" target="_blank">解决方法</a>
+<br>6)CPU占用高的追查手段。<a href="https://blog.csdn.net/chenaini119/article/details/80000949" target="_blank">点我传送</a>
+<br>7)jvm监控之——jmap和jstack使用。<a href="https://blog.csdn.net/sinat_29581293/article/details/70214436" target="_blank">点我传送</a>
+<br>8)java内存泄漏定位与分析。<a href="https://blog.csdn.net/lc0817/article/details/67014499" target="_blank">点我传送</a>
+
+### 移动端测试
+1、专项测试<br>
+弱网测试，<a href="https://blog.csdn.net/qq_28351609/article/details/84568422" target="_blank">详情点我</a>
